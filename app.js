@@ -10,13 +10,17 @@ const printMessage = (text) => {
 const checkClickHandler = () => {
   console.log(dob.value);
   console.log(luckyNum.value);
-  let dobSum = dob.value.split("-").reduce((a, b) => Number(a) + Number(b));
-  console.log(dobSum);
-  console.log(parseInt(dobSum) % parseInt(luckyNum.value) == 0);
-  if (parseInt(dobSum) % parseInt(luckyNum.value) == 0) {
-    printMessage(`${luckyNum.value} is a lucky number!! 🤩`);
+  if (dob.value && luckyNum.value) {
+    let dobSum = dob.value.split("-").reduce((a, b) => Number(a) + Number(b));
+    console.log(dobSum);
+    console.log(parseInt(dobSum) % parseInt(luckyNum.value) == 0);
+    if (parseInt(dobSum) % parseInt(luckyNum.value) == 0) {
+      printMessage(`${luckyNum.value} is a lucky number!! 🤩`);
+    } else {
+      printMessage(`${luckyNum.value} is not that lucky  😕`);
+    }
   } else {
-    printMessage(`${luckyNum.value} is not that lucky  😕`);
+    printMessage(`Please enter both the fields 😇`);
   }
 };
 
