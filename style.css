@@ -52,3 +52,8 @@ button{
     padding: 0.5em;
     border-radius: 0.5em;
 }
+
+input{
+    border-radius: 0.5em;
+    border-color:rgb(133, 27, 186)
+}
