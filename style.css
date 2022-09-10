@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: rgb(240, 205, 153);
 }
 
 body > * {
@@ -56,4 +57,10 @@ button{
 input{
     border-radius: 0.5em;
     border-color:rgb(133, 27, 186)
+}
+
+p{
+    font-size: 0.6em;
+    /* display: none; */
+    margin: 0;
 }
