@@ -1,66 +1,53 @@
-.form{
-    /* border: 2px solid red; */
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
 }
-*{
-    text-align: center;
-}
-
-.form > * {
-    padding: 0.5em
-}
-.form > * {
-    margin: 0.5em ;
-}
-
-body {
-    font-weight: 900;
-    font-size: 1.5em;
+.form{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-color: rgb(240, 205, 153);
+    width: 20vw;
 }
 
-body > * {
-    color: rgb(133, 27, 186);
-    margin: auto;
-    /* margin-top: 1.5em; */
-    /* background-color: rgb(195, 131, 245); */
-    max-width: 50vw;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-radius: 0.5em;
+.form > *{
+    margin: 0.4em 1em;
+}
+input{
+    padding: 0.5em ;
 }
 
-button{
-    background-color: rgb(133, 27, 186);;
-    color: rgb(245, 240, 240);
-    border: none;
-    cursor: pointer;
+#check-btn{
+    margin: 0.5em 1em;
+    background-color: tomato;
+    border-style: none;
+    padding: 0.5em ;
+    color: white;
 }
 
 #message {
-    color: rgb(133, 27, 186);
-    /* background-color: rgb(252, 207, 148); */
-    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: tomato;
+    background-color: rgb(44, 43, 43);
+    padding: 1em 1em;
+    font-weight: 600;
+    display: none;
+}
+
+#notice{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px dashed darkblue;
+    width: 20vw;
+    background-color:whitesmoke;
     margin-top: 1em;
-    padding: 0.5em;
-    border-radius: 0.5em;
+
 }
 
-input{
-    border-radius: 0.5em;
-    border-color:rgb(133, 27, 186)
-}
-
-p{
-    font-size: 0.6em;
-    /* display: none; */
-    margin: 0;
+#x-btn{
+    background-color: rgb(244, 30, 30);
+    color: whitesmoke;
+    cursor: pointer;
 }

@@ -4,7 +4,15 @@ const checkBtn = document.querySelectorAll("button")[0];
 const messageEl = document.querySelector("#message");
 const sum = document.querySelector("#sum");
 
+var noticeBox = document.querySelector("#notice");
+var xBtn = document.querySelector("#x-btn");
+
+xBtn.addEventListener("click", () => {
+  noticeBox.style.display = "none";
+});
+
 const printMessage = (text) => {
+  messageEl.style.display = "block";
   messageEl.innerHTML = text;
 };
 
