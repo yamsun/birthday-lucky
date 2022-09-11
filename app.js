@@ -3,6 +3,7 @@ const luckyNum = document.querySelector("#lucky-num");
 const checkBtn = document.querySelectorAll("button")[0];
 const messageEl = document.querySelector("#message");
 const sum = document.querySelector("#sum");
+const imgMsg = document.querySelector("#img-msg");
 
 var noticeBox = document.querySelector("#notice");
 var xBtn = document.querySelector("#x-btn");
@@ -29,8 +30,10 @@ const checkClickHandler = () => {
     console.log(parseInt(dobSum) % parseInt(luckyNum.value) == 0);
     if (parseInt(dobSum) % parseInt(luckyNum.value) == 0) {
       printMessage(`${luckyNum.value} is a lucky number!! 🤩`);
+      imgMsg.innerHTML = `<img alt="lucky guy gif" src="https://c.tenor.com/WTYNEj_k0tkAAAAC/thumbs-up-jim-carrey.gif"/>`;
     } else {
       printMessage(`${luckyNum.value} is not that lucky  😕`);
+      imgMsg.innerHTML = `<img alt="not lucky gif" src="https://c.tenor.com/2_gV_dFi1VAAAAAM/sml-mama-luigi.gif"/>`;
     }
   } else {
     printMessage(`Please enter both the fields 😇`);
